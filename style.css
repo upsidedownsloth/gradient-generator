@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #b5caf9;
+
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+}
+
+.gradient {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 2.5em;
+    border-radius: 5px;
+    border: white solid 1rem;
+}
+
+input {
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type=color] {
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;    
+    height: 30px;
+    width: 100px;
+}
+
+.btn-container{
+    margin-top: 10px;
+}
+#random-btn{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75em;
+    background-color: #b5caf9;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    margin: 10px;
+}
+#random-btn:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gradient-detail{
+    display: flex;
+    flex-direction: row;
+}
+
+#copy-gradient{
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#copy-gradient:hover i{
+   font-weight: 700;
+   cursor: pointer;
+}
