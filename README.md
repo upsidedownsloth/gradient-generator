@@ -15,4 +15,4 @@ Stretch goals:
 - Check for contrast between the gradient and the text. (not done)
 
 ### Showcase:
-<a href="https://upsidedownsloth.github.io/gradient-generator/" target="_blank">https://upsidedownsloth.github.io/gradient-generator/</a>
+<a href="https://upsidedownsloth.github.io/gradient-generator/" target="_blank">gradient-generator</a>
