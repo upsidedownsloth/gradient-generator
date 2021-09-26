@@ -14,6 +14,7 @@ const picker2 = document.getElementById("picker-2")
 const split = document.getElementById("split")
 const getGradient = document.getElementById("get-gradient")
 const copyBtn = document.getElementById("copy-gradient")
+const toast = document.getElementById("toast")
 
 picker1.addEventListener("input", setGradient)
 picker2.addEventListener("input", setGradient)
@@ -37,11 +38,24 @@ function getRandomGradient() {
 }
 
 function copyGradient(){
-    let copyText = getGradient.innerHTML
-    console.log(copyText)
+    let textToCopy = getGradient.innerHTML
+    navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+        showToast()
+    })
 }
 
+function showToast(){
+    toast.className = "show"
+    setTimeout(function(){
+        toast.className = toast.className.replace("show", "")
+    }, 3000)
+    toast.innerText = "copied!"
+}
+
+
 /* TODO:
-- add copy code function
+- // add copy code function 
 - add degree for gradient
-- add READMe and oush to remote */
+- add READMe and oush to remote
+- // add Toast */
